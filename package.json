@@ -1,0 +1,66 @@
+{
+  "name": "headlog-ui",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-redux": "^5.0.4",
+    "react-scripts": "0.9.5",
+    "react-toolbox": "^2.0.0-beta.8",
+    "react-toolbox-themr": "^1.0.2",
+    "redux": "^3.6.0",
+    "redux-devtools": "^3.4.0",
+    "redux-devtools-dispatch": "^2.2.0",
+    "redux-devtools-dock-monitor": "^1.1.2",
+    "redux-devtools-inspector": "^0.11.3",
+    "redux-devtools-multiple-monitors": "^1.0.1",
+    "redux-logger": "^3.0.1"
+  },
+  "dependencies": {
+    "is-image": "^1.0.1",
+    "is-url": "^1.2.2",
+    "isomorphic-fetch": "^2.2.1",
+    "js-cookie": "^2.1.4",
+    "prop-types": "^15.5.9",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-dropdown": "^1.2.3",
+    "react-grid-system": "^2.9.1",
+    "react-portal": "^3.1.0",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "redux-saga": "^0.15.3",
+    "slate": "^0.19.30"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "toolbox": "react-toolbox-themr"
+  },
+  "reactToolbox": {
+    "include": [
+      "BUTTON",
+      "DATE_PICKER",
+      "APP_BAR",
+      "NAVIGATION",
+      "LINK",
+      "DROPDOWN",
+      "LIST",
+      "MENU",
+      "RIPPLE",
+      "AVATAR",
+      "CARD"
+    ],
+    "customProperties": {
+      "animation-duration": "0.3s",
+      "appbar-color": "#FEFEFE",
+      "appbar-contrast": "red",
+      "color-accent": "#2973D2",
+      "color-accent-dark": "#366690",
+      "color-primary-contrast": "var(--color-dark-contrast)",
+      "color-accent-contrast": "var(--color-dark-contrast)"
+    },
+    "output": "assets/react-toolbox"
+  }
+}

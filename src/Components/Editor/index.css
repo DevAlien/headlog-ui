@@ -1,0 +1,331 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.editor-container {
+  text-align: left;
+  margin: 10px auto;
+  padding: 0 44px;
+}
+
+.editor-container .editor {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  cursor: text;
+  padding: 8px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  box-shadow: inset 0px 1px 8px -3px #ABABAB;
+  background: #fefefe;
+  border-radius: 8px;
+}
+.material-icons {
+    font-size: 18px;
+    vertical-align: text-bottom;
+}
+
+.hover-menu {
+  padding: 8px 7px 6px;
+  position: absolute;
+  z-index: 1;
+  top: -10000px;
+  left: -10000px;
+  margin-top: -6px;
+  opacity: 0;
+  background-color: #222;
+  border-radius: 4px;
+  transition: opacity .75s;
+}
+
+.hover-menu .button {
+  color: #aaa;
+}
+
+.hover-menu .button[data-active="true"] {
+  color: #fff;
+}
+
+.menu > * {
+  display: inline-block;
+}
+
+.menu > * + * {
+  margin-left: 15px;
+}
+
+.button {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.button[data-active="true"] {
+  color: black;
+}
+
+.menu-left {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  z-index: 1;
+  display: inline-flex;
+}
+
+.menu-left > div, .menu-left > .open-hover-left-menu > .material-icons, .menu-left > .open-hover-left-menu, .menu-left > div > .material-icons, .menu-left > .material-icons {
+  width: 24;
+  height: inherit;
+  font-size: inherit;
+}
+
+.open {
+  display: block;
+}
+
+.closed {
+  display: none;
+}
+
+
+
+
+.ane-image {    
+
+    line-height: 20px;
+    margin: 0;
+    position:relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ane-image .header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: rgba(10,10,10,0.5);
+  color: white;
+  height: 40px;
+  padding: 8px;
+}
+.ane-image .header .controls-container {
+  overflow: auto;
+}
+.ane-image .header .controls {
+    color: #FFF;
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ane-image .header .controls li {
+      display: inline-block;
+    padding: 6px 8px;
+    line-height: 40px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0;
+    
+}
+.ane-image .header span {
+  opacity: 1;
+  
+}
+
+
+
+
+
+
+
+.Dropdown-root {
+  position: absolute;
+}
+
+.Dropdown-control {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #333;
+  cursor: default;
+  outline: none;
+  padding: 8px 52px 8px 10px;
+  transition: all 200ms ease;
+}
+
+.Dropdown-control:hover {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+.Dropdown-arrow {
+  border-color: #999 transparent transparent;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  content: ' ';
+  display: block;
+  height: 0;
+  margin-top: -ceil(2.5);
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  width: 0
+}
+
+.is-open .Dropdown-arrow {
+  border-color: transparent transparent #999;
+  border-width: 0 5px 5px;
+}
+.Dropdown-menu {
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  margin-top: -1px;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 1000;
+  -webkit-overflow-scrolling: touch;
+}
+
+.Dropdown-menu .Dropdown-group > .Dropdown-title{
+  padding: 8px 10px;
+  color: rgba(51, 51, 51, 1);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.Dropdown-option {
+  box-sizing: border-box;
+  color: rgba(51, 51, 51, 0.8);
+  cursor: pointer;
+  display: block;
+  padding: 8px 10px;
+}
+
+.Dropdown-option:last-child {
+  border-bottom-right-radius: 2px;
+   border-bottom-left-radius: 2px;
+}
+
+.Dropdown-option:hover {
+  background-color: #f2f9fc;
+  color: #333;
+}
+
+.Dropdown-option.is-selected {
+  background-color: #f2f9fc;
+  color: #333;
+}
+
+.Dropdown-noresults {
+  box-sizing: border-box;
+  color: #ccc;
+  cursor: default;
+  display: block;
+  padding: 8px 10px;
+}
+
+.open-hover-left-menu {
+  line-height: 10px;
+}
+ .open-hover-left-menu:hover .hover-left-menu {
+   display: inline-flex;
+
+ }
+
+.hover-left-menu {
+  padding: 8px 7px 6px;
+  position: absolute;
+  z-index: 1;
+  margin-top: -6px;
+  background-color: #222;
+  border-radius: 4px;
+  transition: opacity .75s;
+}
+
+.hlm-add {
+  top: -26px;
+  left: -2px;
+}
+
+.hlm-style {
+  top: -26px;
+  left: -46px;
+}
+.hover-left-menu .button {
+  color: #aaa;
+}
+
+.hover-left-menu .button[data-active="true"] {
+  color: #fff;
+}
+
+
+
+.editor p {
+  margin: 0;
+  margin-top: 1em;
+}
+
+.editor pre {
+  padding: 10px;
+  background-color: #eee;
+  white-space: pre-wrap;
+}
+
+.editor :not(pre) > code {
+  background-color: #eee;
+  padding: 3px;
+}
+
+.editor img {
+  max-width: 100%;
+}
+
+.editor img.active {
+  box-shadow: 0 0 0 2px blue;
+}
+
+.editor blockquote {
+  border-left: 2px solid #ddd;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 10px;
+  color: #aaa;
+  font-style: italic;
+}
+
+.editor blockquote[dir="rtl"] {
+  border-left: none;
+  padding-left: 0;
+  padding-right: 10px;
+  border-right: 2px solid #ddd;
+}
+
+.editor table {
+  border-collapse: collapse;
+}
+
+.editor td {
+  padding: 10px;
+  border: 2px solid #ddd;
+}
+
+.editor input {
+  font-size: .85em;
+  width: 100%;
+  padding: .5em;
+  border: 2px solid #ddd;
+  background: #fafafa;
+}
+
+.editor input:focus {
+  outline: 0;
+  border-color: blue;
+}
